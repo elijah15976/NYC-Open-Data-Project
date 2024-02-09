@@ -1,0 +1,16 @@
+.cardWord{
+  font-family:Arial;
+  color:#ffffff;
+  font-style: normal;
+  text-decoration:none;
+}
+
+#output{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+#output *{
+  min-width:300px;
+  flex:1;
+}

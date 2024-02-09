@@ -1,0 +1,105 @@
+<!-- Please Open the Webpage in a New Window for Proper Sizing -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Imported Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.7.2/jquery.smoothState.min.js"></script>
+    <script src="Assets/jslibs/components.js"></script>
+    <link href="Assets/jslibs/components.css" rel="stylesheet" type="text/css" />
+
+<!-- My stuff -->
+    <title>Street Closure Due To Construction</title>
+    <link href="Assets/Fonts/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="top.css" rel="stylesheet" type="text/css" />
+    <link href="body.css" rel="stylesheet" type="text/css" />
+    <link href="home.css" rel="stylesheet" type="text/css" />
+    <link href="scrollbar.css" rel="stylesheet" type="text/css" />
+    <script src="transition.js"></script>
+    <script src="home.js"></script>
+  </head>
+  
+  <body onload='createModal()'>
+<!-- Top Part of the Webpage -->
+    <header>
+      <div style='display:flex;'>
+        <a href='index.html' id='logoImage' style='flex:1;'>
+          <img src='Assets/Images/311.png' id='logo'>
+        </a>
+        <div style='flex:5;'>
+          <h2>Street Closure Due</h2>
+          <h2>To Construction</h2>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html"><img src="Assets/Images/Home.png" width="25px" height="25px" id='active_page'></a>
+        <a href="Info.html"><img src="Assets/Images/Info.png" width="25px" height="25px"></a>
+        <a href="Analyze.html"><img src="Assets/Images/Analyze.png" width="25px" height="25px"></a>
+      </nav>
+    </header>
+<!--  Main Things in the Webpage -->
+    <main>
+      <div id='banner'>
+        <img src='Assets/Images/Home_Banner.png'>
+        <h3>HOME</h3>
+      </div>
+      <div>
+        <div id='abt'>
+          <h4 style='margin-left:10px;'>ABOUT</h4>
+          <p style='margin-left:10px;'>Department of Transportation (DOT) Street Closure data identifies locations in the New York City Street Closure map where a street is subject to a full closure, restricting through traffic, for the purpose of conducting construction related activity on a City street. Details about DOT construction permits can be found at Street Works Manual, <a href='https://streetworksmanual.nyc/' style='color:#0088FF;' target='_blank'>https://streetworksmanual.nyc/</a>. Full Closure Permits are issued for a period of time during which the street may be closed to through traffic for only a portion of the time, and open at other times.</p>
+        </div>
+        <div id='dataset'>
+          <h4 style='margin-left:10px;'>DATASET</h4>
+          <p style='margin-left:10px;'>The Dataset provides the specific street that is closed, and the borough where it is closed. It also provides the estimated time it would be closed for along with a simple reasoning as to why the street is closed.</p>
+        </div>
+      </div>
+      <hr>
+      <div>
+<!-- Gallery stuff here -->
+        <h4 style='text-align:center; font-size:35px; margin-bottom:15px;'>Gallery</h4>
+        <div id='output'>
+        </div>
+      </div>
+      <hr>
+      <div>
+        <h4 style='text-align:center; font-size:35px; margin-bottom:15px;'>Discover</h4>
+        <div id='body_nav'>
+          <a href="Info.html" class='navcontain'>
+            <img src="Assets/Images/Road_Blockage.jpg">
+            <h4>Information</h4>
+          </a>
+          <a href="Analyze.html" class='navcontain'>
+            <img src="Assets/Images/Charts.jpg">
+            <h4>Analysis</h4>
+          </a>
+        </div>
+      </div>
+    </main>
+<!-- Bottom Part of the Webpage -->
+    <footer>
+      <div id="copyright">
+        <p>@2022 Elijah Ren</p>
+        <div>
+          <img src="Assets/Images/phone.png" width="20px" height="20px">
+          <p style="display:inline;">(718) 229-7600</p>
+        </div>
+        <div>
+          <img src="Assets/Images/fax.png" width="20px" height="20px">
+          <p style="display:inline;">(718) 423-9566</p>
+        </div>
+      </div>
+      <div id="footLink">
+        <a href="https://www.baysidehighschool.org/" target='_blank'>
+          <img src="Assets/Images/bhslogo.jpg" width="50px" height="50px">
+        </a>
+        <a href="https://twitter.com/baysidehsqueens?lang=en" target='_blank'>
+          <img src="Assets/Images/twitter.png" width="50px" height="50px">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

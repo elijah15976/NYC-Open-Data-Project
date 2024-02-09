@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+body{
+  background-color:#382529;
+  margin:0px;
+}
+
+#banner{
+  background-color:#1c0909;
+  margin-top:0px;
+  margin-bottom:0px;
+  display:flex;
+}
+
+#banner img{
+  margin:10px;
+  margin-left:20px;
+  max-width:50px;
+  max-height:50px;
+  flex:1;
+}
+
+#banner h3{
+  color:white;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding:10px;
+  padding-left:15px;
+  font-family:Koulen;
+  font-size:30px;
+  letter-spacing:5px;
+  flex:1;
+}
+
+main{
+  margin: auto;
+  width: 60%;
+  min-width:500px;
+  max-width:1500px;
+  background-color:#2c1d20;
+  border:1px solid #2a1a20;
+  min-height:50px;
+}
+
+main h4{
+  margin-left:25px;
+  color:white;
+  font-family:Arial;
+  font-size:23px;
+  font-style: italic;
+  text-decoration:underline;
+  letter-spacing:2px;
+}
+
+main p{
+  margin-left:25px;
+  margin-right:25px;
+  color:white;
+  font-family:Arial;
+}
+
+footer{
+  margin-top:20px;
+  background-color:#1c0909;
+  min-height:50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+footer div{
+  text-align:center;
+  flex:1;
+}
+
+footer p{
+  font-family:Koulen;
+  color:#dbe2ff;
+  margin:10px;
+}
+
+.press{
+  background-color:#863537;
+  border:2px solid #572225;
+  color:#f0a61c;
+  border-radius:10px;
+}
+
+.press:hover{
+  cursor:pointer;
+}
+
+.press:active{
+  background-color:#5b2425;
+  color:#c1830d;
+}
+
+.press:active > img{
+  filter:saturate(45%) brightness(60%);;
+}

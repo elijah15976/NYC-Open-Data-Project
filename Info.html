@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Imported Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.7.2/jquery.smoothState.min.js"></script>
+    <script src="Assets/jslibs/components.js"></script>
+    <link href="Assets/jslibs/components.css" rel="stylesheet" type="text/css" />
+    
+<!-- My stuff -->
+    <title>Street Closure | Information</title>
+    <link href="Assets/Fonts/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="top.css" rel="stylesheet" type="text/css" />
+    <link href="body.css" rel="stylesheet" type="text/css" />
+    <link href="info.css" rel="stylesheet" type="text/css" />
+    <link href="searchstyle.css" rel="stylesheet" type="text/css" />
+    <link href="scrollbar.css" rel="stylesheet" type="text/css" />
+    <script src="transition.js"></script>
+    <script src="script.js"></script>
+    <script src="info.js"></script>
+
+  </head>
+  
+  <body onload='init(0)'>
+<!-- Top Part of the Webpage -->
+    <header>
+      <div style='display:flex;'>
+        <a href='index.html' id='logoImage' style='flex:1;'>
+          <img src='Assets/Images/311.png' id='logo'>
+        </a>
+        <div style='flex:5;'>
+          <h2>Street Closure Due</h2>
+          <h2>To Construction</h2>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html"><img src="Assets/Images/Home.png" width="25px" height="25px"></a>
+        <a href="Info.html"><img src="Assets/Images/Info.png" width="25px" height="25px" id='active_page'></a>
+        <a href="Analyze.html"><img src="Assets/Images/Analyze.png" width="25px" height="25px"></a>
+      </nav>
+    </header>
+<!--  Main Things in the Webpage -->
+    <main>
+      <div id='banner'>
+        <img src='Assets/Images/Info_Banner.png'>
+        <h3>INFORMATION</h3>
+      </div>
+<!-- Search -->
+      <div id='search'>
+        <input type='text' id='searchbar' placeholder='Search For Something...'>
+        <select id='selection'>
+          <option value='disabled'>TYPE</option>
+          <option value='street_name'>Street Name</option>
+          <option value='borough_code'>Borough</option>
+        </select>
+        <button class='press' id='submit_search' onclick='search()'>
+          <img src='Assets/Images/Search.png'>
+        </button>
+      </div>
+      <hr>
+<!-- Output -->
+      <div>
+        <div id='count'>
+        </div>
+        <div id='output'>
+        </div>
+      </div>
+    </main>
+<!-- Bottom Part of the Webpage -->
+    <footer>
+      <div id="copyright">
+        <p>@2022 Elijah Ren</p>
+        <div>
+          <img src="Assets/Images/phone.png" width="20px" height="20px">
+          <p style="display:inline;">(718) 229-7600</p>
+        </div>
+        <div>
+          <img src="Assets/Images/fax.png" width="20px" height="20px">
+          <p style="display:inline;">(718) 423-9566</p>
+        </div>
+      </div>
+      <div id="footLink">
+        <a href="https://www.baysidehighschool.org/" target='_blank'>
+          <img src="Assets/Images/bhslogo.jpg" width="50px" height="50px">
+        </a>
+        <a href="https://twitter.com/baysidehsqueens?lang=en" target='_blank'>
+          <img src="Assets/Images/twitter.png" width="50px" height="50px">
+        </a>
+      </div>
+    </footer>
+
+<!-- Internal Scripting -->
+    <script>
+      document.getElementById('searchbar').addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          document.getElementById("submit_search").click();
+      }
+      }); 
+    </script>
+  </body>
+</html>
